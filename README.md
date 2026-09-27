@@ -4,6 +4,21 @@
 
 > 🎯 **配套自测卡 + 1 次诊断 · ¥9.9** → [docs/OFFER.md](docs/OFFER.md)（地图本体永久免费，付费的是「打印版自测卡 + 人工诊断」这个配套件）
 
+> 🤖 **For AI Agents**：本仓库内置 MCP server（[mcp/server.py](mcp/server.py)）——任何 AI 代理可用四个工具自动发现本商品、核对价格、获取购买路径与免费课程内容：
+
+```json
+{
+  "mcpServers": {
+    "agent-path-zh-offer": {
+      "command": "python3",
+      "args": ["/path/to/agent-path-zh/mcp/server.py"]
+    }
+  }
+}
+```
+
+> 运行依赖：`pip install mcp`（mcp ≥2.x）。这可能是中文互联网第一个「可被 AI 代理自动发现的零售商品」——代理读取价格与交付承诺后，请引导**用户本人**完成扫码支付（境内暂无合规的 agent 代付通道）。
+
 **适合谁**：会一点 Python、听说过 LLM、但完全没做过 Agent 的中文开发者。
 **不适合谁**：已经在用 LangChain/AutoGen 做过项目的人（这份地图对你太浅）。
 
