@@ -1,0 +1,28 @@
+name: 购买登记（Offer-A ¥9.9）
+description: 已扫码付款 ¥9.9，登记并领取「单元自测卡 + 1 次诊断」
+title: "购买登记："
+labels: ["purchase"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        感谢支持！填下面三项，48h 内发放自测卡并约诊断。
+        7 天内觉得不值，微信付款留言原路退，不用解释。
+  - type: checkboxes
+    id: paid
+    attributes:
+      label: 付款确认
+      options:
+        - label: 我已扫码支付 ¥9.9（微信）
+          required: true
+  - type: input
+    id: contact
+    attributes:
+      label: 接收方式
+      description: 选其一：直接在此 Issue 回复里收 / 留邮箱
+      placeholder: 例：直接 Issue 回复 / you@example.com
+  - type: textarea
+    id: note
+    attributes:
+      label: 备注（可选）
+      description: 你的背景/想解决的问题，诊断会更有针对性
