@@ -6,20 +6,21 @@ body:
   - type: markdown
     attributes:
       value: |
-        感谢支持！填下面三项，48h 内发放自测卡并约诊断。
-        7 天内觉得不值，微信付款留言原路退，不用解释。
+        感谢支持！填下面三项，48h 内发放诊断回执。
+        7 天内觉得不值，小报童留言原路退，不用解释理由。
+        （购买渠道：小报童 https://xiaobot.net/p/agentpathcards ）
   - type: checkboxes
     id: paid
     attributes:
       label: 付款确认
       options:
-        - label: 我已扫码支付 ¥9.9（微信）
+        - label: 我已在小报童购买专栏（¥10）
           required: true
   - type: input
     id: contact
     attributes:
-      label: 接收方式
-      description: 选其一：直接在此 Issue 回复里收 / 留邮箱
+      label: 小报童昵称或订单号
+      description: 用于核对订单（也可填邮箱便于联系）
       placeholder: 例：直接 Issue 回复 / you@example.com
   - type: textarea
     id: note
